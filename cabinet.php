@@ -33,6 +33,7 @@
 				echo "<p>" . userName() . ", my master!...</p>";
 				include ('setings.php');
 				include ('articles.php');
+				include ('user_edit.php');
 				//include ('users.php');
 				//include ('log.php');
 			}
