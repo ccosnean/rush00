@@ -1,7 +1,7 @@
 <?php
 	$res = query("select * from products;");
 
-	if (isset($_GET['search']))
+	if (isset($_GET['category']))
 	{
 		$c = "";
 		$nr = count($_GET['category']);
@@ -30,7 +30,10 @@
 	</a>
 	<p id="product_price"><? echo $a['price'] ?></p>
 	<div class="article_desc">
-		<p><? echo $a['description']; ?>
+		<p><? echo substr($a['description'], 0, 260);
+				if (strlen($a['description']) > 260)
+					echo "...";
+			?>
 		</p>
 	</div>
 	<span class="stock">Stock: <? echo $a['stock'];?></span>
