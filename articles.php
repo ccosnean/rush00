@@ -1,4 +1,6 @@
 <br>
+<h2>Add articles</h2>
+<br>
 <div class="articleadd">
 <form action="addarticle.php" method="post" class="articlesform">
 	<a href="index.php">View all articles</a>

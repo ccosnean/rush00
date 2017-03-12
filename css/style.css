@@ -343,39 +343,74 @@ a:active{
 
 #adm_ulist_user_img {
 	position: absolute;
+	display: block;
 	float: left;
-	left: 20px;
+	left: 5px;
+	top: 2.5px;
 	padding: 5px;
-	width: 40px;
-	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	border-radius: 100%;
+	overflow: hidden;
+}
+
+#adm_ulist_user_img img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.date {
+	position: absolute;
+	right: 250px;
+	top: 10px;
+	color: gray;
+	font-size: 10pt;
 }
 
 #adm_ulist_user_name {
 	position: absolute;
 	top: 15%;
 	font-size: 24px;
-	left: 10%;
+	left: 60px;
 }
 
 #adm_ulist_user_perm {
 	position: absolute;
 	font-size: 14px;
-	right: 19%;
+	right: 130px;
 	top: 5px;
 }
 
 #permission_form {
 	position: absolute;
-	right: 20%;
+	right: 130px;
 	top: 25px;
 }
 
 #usr_delete_btn {
-	width: 150px;
+	width: 50px;
 	height: 100%;
 	border: none;
 	background-color: black;
 	float: right;
+	border-left: 1px solid white;
+}
+
+#saveuserinfo {
+	position: absolute;
+	display: block;
+	width: 70px;
+	height: 51px;
+	top: 0;
+	right: 0;
+	transform: translate(114%, -26px);
+	border: none;
+	background-color: black;
+	float: right;
+	color: white;
+
 }
 
 #delete_img {

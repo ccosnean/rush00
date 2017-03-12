@@ -1,18 +1,38 @@
+<?php
+	echo "<h2>All users</h2><br>";
+	$user = query("select * from users");
+	while ($u = fetch($user))
+	{
+?>
+
 <div class="adm_ulist_user">
-	<img id="adm_ulist_user_img" src="https://m.media-amazon.com/images/G/01/aplusautomation/vendorimages/65fa961e-8f22-4fe6-a420-3c3c26dd2953.jpg._CB289161999__SL300__.jpg">
-	<p id="adm_ulist_user_name">%user_name%</p>
-	<p id="adm_ulist_user_perm">%current_mod%</p>
-	<form id="permission_form" action="" method="post">
-		<select name="perms[]">
-			<!-- <option disabled>%initial_value%</option> -->
-			<option value="Common user">Common User</option>
-			<option value="Moderator">Moderator</option>
-			<option value="Common user">Admin</option>
+	<div id="adm_ulist_user_img">
+		<img id="" src="<? echo $u['user_image']; ?>">
+	</div>
+	<p id="adm_ulist_user_name"><? echo $u['name']; ?></p>
+	<span class="date">
+		<p class="">Registered: <? echo $u['register_date'] ?></p>
+		<p class="">Last login: <? echo $u['login_date'];?></p>
+	</span>
+	<p id="adm_ulist_user_perm"><? echo userTypeParam($u['email']); ?></p>
+	<form id="permission_form" action="cabinet.php" method="post">
+		<input type="hidden" name="userid" value="<? echo $u['idusers']?>"/>
+		<select name="perms">
+			<option value="1">User</option>
+			<option value="2">Moderator</option>
+			<option value="3">Admin</option>
 		</select>
+		<button type="submit" name="saveuserinfo" value="save" id="saveuserinfo">
+			Save
+		</button>
 	</form>
+	<a href="deleteuser.php?id=<? echo $u['idusers']?>">
 	<button id="usr_delete_btn">
 		<img id="delete_img" src="http://vignette4.wikia.nocookie.net/deusex/images/e/e4/Icon_cross.png/revision/latest?cb=20110905165325&path-prefix=en">
-		<font color="white"> Delete user </font>
 	</button>
+	</a>
 </div>
 </br>
+<?php
+	}
+?>

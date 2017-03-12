@@ -11,7 +11,14 @@
 <body>
 	<div class="container content">
 		<header>
-			<?php include('menu.php'); ?>
+			<?php include('menu.php'); 
+				if (isset($_POST['saveuserinfo']))
+				{
+					$mode = $_POST['perms'];
+					$uid = $_POST['userid'];
+					query("UPDATE `user_permisions` SET `fk_permision_id` = '$mode' WHERE `fk_id_user` = '$uid';");
+				}
+			?>
 		</header>
 		<br>
 		<?php
