@@ -321,3 +321,52 @@ a:active{
 	right: 10px;
 	float: right;
 }
+
+.adm_ulist_user {
+	position: relative;
+	width: calc(100% - 5px);
+	height: 50px;
+	border: 1px solid;
+}
+
+#adm_ulist_user_img {
+	position: absolute;
+	float: left;
+	left: 20px;
+	padding: 5px;
+	width: 40px;
+	border-radius: 50%;
+}
+
+#adm_ulist_user_name {
+	position: absolute;
+	top: 15%;
+	font-size: 24px;
+	left: 10%;
+}
+
+#adm_ulist_user_perm {
+	position: absolute;
+	font-size: 14px;
+	right: 19%;
+	top: 5px;
+}
+
+#permission_form {
+	position: absolute;
+	right: 20%;
+	top: 25px;
+}
+
+#usr_delete_btn {
+	width: 150px;
+	height: 100%;
+	border: none;
+	background-color: black;
+	float: right;
+}
+
+#delete_img {
+	width: 10px;
+	height: 10px;
+}
