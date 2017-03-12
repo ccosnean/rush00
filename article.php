@@ -28,7 +28,7 @@
 	<a href="view_article.php?id=<? echo $a['idproducts'] ?>">
 		<span id="link_block"></span>
 	</a>
-	<p id="product_price"><? echo $a['price'] ?></p>
+	<p id="product_price"><? echo $a['price'] ?>$</p>
 	<div class="article_desc">
 		<p><? echo substr($a['description'], 0, 260);
 				if (strlen($a['description']) > 260)
@@ -36,7 +36,11 @@
 			?>
 		</p>
 	</div>
-	<span class="stock">Stock: <? echo $a['stock'];?></span>
+	<span class="stock"><? 
+						if ($a['stock'] == 0)
+							echo "<i class='red'>Out of stock</i>";
+						else
+							echo "stock: " .$a['stock']; ?></span>
 	<p id="category">Categoriile: 
 	<?
 		$pid = $a['idproducts'];

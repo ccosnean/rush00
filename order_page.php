@@ -21,9 +21,7 @@
 				</font>			
 			</button>
 		</form>
-		<div class="order_container">
-			<?php include("order_elem.php"); ?>
-		</div>
+		<?php include("order_elem.php"); ?>
 		<?php include('footer.php'); ?>
 	</div>
 </body>

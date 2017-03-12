@@ -13,7 +13,6 @@
 		<?php include('menu.php'); ?>
 		<br>
 		<br>
-		<div class="order_container">
 
 				<?php
 					$uid = get_id($_SESSION['email']);
@@ -54,7 +53,6 @@
 
 
 
-		</div>
 		<?php include('footer.php'); ?>
 	</div>
 </body>

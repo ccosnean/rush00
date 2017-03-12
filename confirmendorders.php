@@ -1,9 +1,10 @@
 <div class="order_container">
+<h1>Confirmed orders</h1>
 <?php
 	$uid = get_id($_SESSION['email']);
 	$q = query("select products.idproducts, products.name, products.description, products.main_image, orders.* from orders
 				join products on products.idproducts = orders.fk_product_id
-				where orders.fk_user_id = $uid and confirmed = 0;
+				where orders.fk_user_id = $uid and confirmed = 1;
 			");
 
 	if (mysqli_num_rows($q) == 0)
@@ -27,10 +28,6 @@
 			</p>
 		</div>
 		<span class="stock">Count: <? echo $r['stock'];?></span>
-		<form action="deletefromorder.php" method="get">
-		<input type="hidden" name="ordid" value="<? echo $r['idorders'];?>"/>
-			<input style="position: absolute; top: 85px; right: 10px; z-index: 2;" type="submit" name='del' value="Delete from order">
-		</form>
 	</div>
 <?php
 	}

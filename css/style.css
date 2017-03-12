@@ -311,6 +311,10 @@ a:active{
   	z-index: 1;
 }
 
+.red {
+	color: red;
+}
+
 .article_desc {
 	position: absolute;
 	top: 35%;
@@ -473,7 +477,7 @@ a:active{
 .comment_div {
 	position: relative;
 	width: 100 - 5px%;
-	min-height: 100px;
+	min-height: 70px;
 	border: 1px solid;
 }
 

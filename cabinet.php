@@ -33,6 +33,7 @@
 				echo "<p>" . userName() . ", here you can change articles, and your acount</p>";
 				include ('setings.php');
 				include ('articles.php');
+				include ('confirmendorders.php');
 				//include ('log.php');
 			}
 			else if (userType() === "Admin")
@@ -41,6 +42,7 @@
 				include ('setings.php');
 				include ('articles.php');
 				include ('user_edit.php');
+				include ('confirmendorders.php');
 				//include ('users.php');
 				//include ('log.php');
 			}
