@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include('dbfunctions.php');
 	if (isset($_POST['register']))
 	{
 		$name = mysqli_real_escape_string($db, $_POST['name']);
