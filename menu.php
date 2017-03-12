@@ -28,7 +28,7 @@
 		</a>
 		</div>
 		<div class="acountBTNS">
-			<a href="orders.php">Orders</a>
+			<a href="order_page.php">Orders</a>
 			<a href="logout.php">Logout</a>
 			</div>
 		<?php

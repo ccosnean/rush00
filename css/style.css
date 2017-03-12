@@ -476,3 +476,7 @@ a:active{
 	min-height: 100px;
 	border: 1px solid;
 }
+
+.order_container {
+	width: 100%;
+}
