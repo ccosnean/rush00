@@ -43,6 +43,7 @@ header {
 	height: 50px;
 	top: 0;
 	left: 0;
+	z-index: 100;
 }
 
 .pagelink {
@@ -108,6 +109,18 @@ header {
 	left: 10px;
 	top: 13px;
 	font-size: 16pt;
+}
+
+.forms {
+	z-index: 200;
+}
+
+.logo:hover{
+	color: rgba(255, 255, 255, .9);
+}
+
+.logo:active{
+	color: rgba(255, 255, 255, .7);
 }
 
 a{
@@ -258,11 +271,11 @@ a:active{
 	position: relative;
 	margin-top: 20px;
 	left: 0;
-	width: 880px;
+	width: calc(100% - 22px);
 	height: 150px;
 	border: solid 1px black;
 	padding: 10px;
-	/*box-shadow: 4px 4px 4px black;*/
+	z-index: 1;
 }
 
 #article_img {

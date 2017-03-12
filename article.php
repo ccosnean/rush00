@@ -1,3 +1,4 @@
+<br>
 <div class="article_div">
 	<img id="article_img" src="42.png">
 	<a id="name_label">%article_name%</a>
@@ -14,3 +15,6 @@
 	</div>
 	<p id="category">Categoriile: %category%</p>
 </div>	
+
+<br>
+<br>

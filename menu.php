@@ -1,3 +1,4 @@
+<header>
 <nav class="navbar">
 		<a href="index.php" class="logo">AcademyShop</a>
 		<?php
@@ -8,6 +9,7 @@
 		<div class="acountBTNS">
 			<a href="#l" onclick="tooglelogin();">Login</a>
 			<a href="#r" onclick="toogleregister()">Register</a>
+			</div>
 		<?php
 			}
 			else
@@ -28,16 +30,16 @@
 		<div class="acountBTNS">
 			<a href="orders.php">Orders</a>
 			<a href="logout.php">Logout</a>
+			</div>
 		<?php
 			}
 		?>
-		</div>
 </nav>
 <?php 
 	if (!authcheck())
 	{
 ?>
-<div class="container content">
+<div class="container content forms">
 	<form action="login.php" method="post" class="loginform" id = "loginform">
 			<input type="text" name="email" placeholder="Email">
 			<br>
@@ -57,3 +59,4 @@
 <?php
 	}
 ?>
+</header>
