@@ -34,7 +34,7 @@
 			</div>
 			<form style="position: absolute; right: 55px; top: 370px" method="post">
 				<input type="number" value="Amount" />
-				<input type="submit" value="Add to card" />
+				<input type="submit" value="Add to cart" />
 			</form>
 		</div>
 		<div class="feedback_container">
