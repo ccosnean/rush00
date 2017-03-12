@@ -10,31 +10,34 @@
 </head>
 <body>
 	<div class="container content">
-		<?php include('menu.php'); ?>
+		<?php include('menu.php'); 
+
+		if (isset($_GET['id']))
+			$productid = $_GET['id'];
+		$q = fetch(query("SELECT * from `products` WHERE `idproducts` = $productid"));
+
+		?>
 		<br>
 		<br>
 		<div class="product_container">
-			<img style="position: absolute; border: 1px solid" width="350px" height="350px" src="https://www.skusky.com/Images/DefaultProduct.jpg">
-			<p id="detailed_product_name">%name%</p>
+			<img style="position: absolute; border: 1px solid" width="350px" height="350px" src="<?php echo trim($q['main_image'], "'");?>">
+			<p id="detailed_product_name"><? echo $q['name']; ?></p>
 			<span style="position: absolute; left: 400px; top: 70px">
 				<font size="3px">
-					<p>sku: %sky%</p>
-					<p>stock: %stock%</p>
+				<br>
+					<p>sku: <? echo $q['sku']; ?></p>
+					<p>stock: <? echo $q['stock']; ?></p>
 				</font>
 			</span>
-			<p id="detailed_product_price">%price%</p>
+			<p id="detailed_product_price"><? echo $q['price'] ?>$</p>
 			<div class="detailed_product_desc">
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
-				eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
-				enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-				nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-				in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-				nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-				sunt in culpa qui officia deserunt mollit anim id est laborum.
+				<? echo $q['description']; ?>
 			</div>
-			<form style="position: absolute; right: 55px; top: 370px" method="post">
-				<input type="number" value="Amount" />
-				<input type="submit" value="Add to card" />
+			<form action="addtocard.php" class="addtocardform" method="post">
+				<input type="hidden" name="prodid" value="<? echo $q['idproducts']; ?>">
+				<input type="hidden" name="price" value="<? echo $q['price']; ?>">
+				<input style="width: calc(100% - 24px);padding:10px;" name="stock" type="number" value="" /><br>
+				<input style="width:100%;" type="submit" name="add" class="btn" value="Add to card" />
 			</form>
 		</div>
 		<div class="feedback_container">
@@ -43,9 +46,11 @@
 			<p>Leave feedback:</p>
 			</br>
 			<form method="post">
-				<textarea name="feedback" cols="147" rows="5"></textarea></p>
-				<input style="float: right;" type="submit" value="Send">
+				<textarea name="feedback" class="text" rows="5"></textarea></p>
+				<input style="float: right;" class="btn" type="submit" value="Send">
 			</form>
+			</br>
+			</br>
 			</br>
 			<p>Other comments</p>
 			</br>
