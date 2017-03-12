@@ -69,7 +69,37 @@ header {
 	padding: 10px;
 	border: 1px solid black;
 	margin: 5px 0;
-	width: calc(100% - 20px);
+	width: calc(100% - 22px);
+}
+
+.articlesform {
+	display: block;
+	width: 100%;
+}
+
+.articlesform input{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 5px 0;
+	width: calc(100% - 22px);
+}
+
+.articlesform textarea{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 5px 0;
+	width: calc(100% - 22px);
+	resize: vertical;
+}
+
+.articlesform select{
+	border: 1px solid black;
+	height: 35px;
+	margin: 5px 0;
+	width: 100%;
+	resize: vertical;
+	border: 1px solid black;
+	border-radius: 0;
 }
 
 .logo{
@@ -82,14 +112,15 @@ header {
 
 a{
 	text-decoration: none;
+	color: gray;
 }
 
 a:hover{
-	color: rgba(255, 255, 255, .9);
+	color: rgba(0, 0, 0, .9);
 }
 
 a:active{
-	color: rgba(255, 255, 255, .7);
+	color: rgba(0, 0, 0, .7);
 }
 
 .loginform {
@@ -147,7 +178,7 @@ a:active{
 }
 
 #registerform a:hover{
-		text-decoration: underline;
+	text-decoration: underline;
 }
 
 .loginform a:hover{

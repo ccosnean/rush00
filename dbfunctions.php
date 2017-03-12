@@ -12,6 +12,13 @@
 		return mysqli_query($db, $q);
 	}
 
+	function categories()
+	{
+		$res = query("select * from `categories`");
+		while ($arr = fetch($res))
+			echo "<option value = '". $arr['idcategories'] ."'>" . $arr['category'] . "</option>";
+	}
+
 	function get_id($email)
 	{
 		return fetch(query("SELECT `idusers` as 'id' FROM `users` where email = '$email'"))['id'];
