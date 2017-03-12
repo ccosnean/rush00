@@ -22,7 +22,7 @@
 					echo categoriesvalues();
 				?>
 			</select>
-			<button type="submit" name="search" style="width:100%;" class="btn">Search</button>
+			<button type="submit" style="width:100%;" class="btn">Search</button>
 		</form>
 		<?php include('article.php'); ?>
 		<br>

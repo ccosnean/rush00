@@ -315,8 +315,9 @@ a:active{
 	position: absolute;
 	top: 35%;
 	left: 22%;
-	width: 50%;
-	height: 100px;
+	width: 65%;
+	height: 85px;
+	overflow: hidden;
 }
 
 #product_price {
@@ -329,6 +330,8 @@ a:active{
 	bottom: 10px;
 	right: 10px;
 	float: right;
+	color: gray;
+	font-size: 10pt;
 }
 
 .searchform {
