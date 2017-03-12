@@ -17,7 +17,7 @@
 			where $c)t1;
 			");
 	}
-
+	
 	while ($a = fetch($res))
 	{
 ?>

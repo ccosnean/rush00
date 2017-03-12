@@ -64,6 +64,16 @@
 			"))['permision'];
 	}
 
+	function userTypeParam($email)
+	{
+		$uid = get_id($email);
+		return fetch(query("
+				select permisions.permision from user_permisions
+				join permisions on user_permisions.fk_permision_id = permisions.idpermisions
+				where user_permisions.fk_id_user = $uid;
+			"))['permision'];
+	}
+
 	function authcheck()
 	{
 		return $_SESSION['email'];
