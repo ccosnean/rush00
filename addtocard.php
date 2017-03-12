@@ -1,10 +1,10 @@
 <?php
 	session_start();
 	include('dbfunctions.php');
-	if (isset($_POST['add']))
+	$prodid = $_POST['prodid'];
+	if (isset($_POST['add']) && authcheck())
 	{
 		$price = $_POST['price'];
-		$prodid = $_POST['prodid'];
 		$stock = $_POST['stock'];
 		$uid = get_id($_SESSION['email']);
 		$price *= $stock;

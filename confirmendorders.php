@@ -8,7 +8,7 @@
 			");
 
 	if (mysqli_num_rows($q) == 0)
-		echo "<br><h1>All orders has been confirmed!</h1>";
+		echo "<br><h1>No orders has been confirmed!</h1>";
 	while ($r = fetch($q))
 	{
 ?>
