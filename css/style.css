@@ -139,7 +139,7 @@ a:active{
 .loginform {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 60px;
 	display: none;
 	padding: 10px;
 	border: 1px solid black;
@@ -151,7 +151,7 @@ a:active{
 #registerform {
 	position: absolute;
 	right: 0;
-	top: 0;
+	top: 60px;
 	display: none;
 	padding: 10px;
 	border: 1px solid black;

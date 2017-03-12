@@ -13,7 +13,7 @@
 		<?php include('menu.php'); ?>
 		<br>
 		<br>
-		<form method="post">
+		<form action="confirmorders.php" method="post">
 			<button style="width: 100%; height: 100px">
 				<img width="70px" style="position: absolute; left: 300px; top: 50px" src="https://d30y9cdsu7xlg0.cloudfront.net/png/28468-200.png">
 				<font style="position: absolute; left: 390px; top: 70px" size="5px">

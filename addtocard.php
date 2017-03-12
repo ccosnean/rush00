@@ -7,6 +7,7 @@
 		$prodid = $_POST['prodid'];
 		$stock = $_POST['stock'];
 		$uid = get_id($_SESSION['email']);
+		$price *= $stock;
 		query("
 			INSERT INTO `academyshop`.`orders`
 			(`idorders`,
