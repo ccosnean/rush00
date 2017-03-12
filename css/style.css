@@ -1,0 +1,222 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: verdana;
+}
+
+.navbar{
+	position: relative;
+	display: block;
+	width: 900px;
+	height: 50px;
+	background-color: black;
+	color: white;
+	margin: 0 auto;
+}
+
+.container {
+	display: block;
+	position: relative;
+	width: 900px;
+	margin: 0 auto;
+}
+
+footer {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	background-color: black;
+	min-height: 50px;
+	width: 900px;
+	color: white;
+}
+
+footer p{
+	margin-top: 15px;
+	text-align: center;
+}
+
+header {
+	position: fixed;
+	display: block;
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+}
+
+.pagelink {
+	color: gray;
+}
+
+.pagelink:hover{
+	text-decoration: underline;
+	color: gray;
+}
+
+.content {
+	margin-top: 50px;
+	min-height: 890px;
+	padding-bottom: 50px;
+}
+
+#saveinfo{
+	display: block;
+	width: 100%;
+}
+
+#saveinfo input{
+	padding: 10px;
+	border: 1px solid black;
+	margin: 5px 0;
+	width: calc(100% - 20px);
+}
+
+.logo{
+	color: white;
+	position: absolute;
+	left: 10px;
+	top: 13px;
+	font-size: 16pt;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: rgba(255, 255, 255, .9);
+}
+
+a:active{
+	color: rgba(255, 255, 255, .7);
+}
+
+.loginform {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+	padding: 10px;
+	border: 1px solid black;
+	width: 300px;
+	background-color: white;
+}
+
+#registerform {
+	position: absolute;
+	right: 0;
+	top: 0;
+	display: none;
+	padding: 10px;
+	border: 1px solid black;
+	width: 300px;
+	background-color: white;
+}
+
+#registerform input{
+	padding: 10px;
+	margin: 10px 0;
+	width: calc(100% - 20px);
+	border: 1px solid black;
+	font-size: 10pt;
+}
+
+.loginform input{
+	padding: 10px;
+	margin: 10px 0;
+	width: calc(100% - 20px);
+	border: 1px solid black;
+	font-size: 10pt;
+}
+
+#registerform a{
+	text-decoration: none;
+	color: gray;
+	font-size: 10pt;
+	float: right;
+	margin: 10px 0 0 0;
+}
+
+.loginform a{
+	text-decoration: none;
+	color: gray;
+	font-size: 10pt;
+	float: right;
+	margin: 10px 0 0 0;
+}
+
+#registerform a:hover{
+		text-decoration: underline;
+}
+
+.loginform a:hover{
+	text-decoration: underline;
+}
+
+.btn {
+	padding: 10px;
+	background-color: black;
+	color: white;
+	border: 1px solid black;
+	width: calc(50% - 3px);
+	font-size: 10pt;
+	cursor: pointer;
+}
+
+.btn:hover{
+	color: rgba(255, 255, 255, .9);
+}
+
+.btn:active {
+	color: rgba(255, 255, 255, .7);
+}
+
+.user {
+	position: absolute;
+	display: block;
+	left: 50%;
+	height: 100%;
+	min-width: 100px;
+	transform: translate(-50%, 0);
+	padding: 5px 5px 0 5px;
+	cursor: pointer;
+}
+
+.user span{
+	color: white;
+}
+
+.user a{
+	display: block;
+}
+
+.user:hover{
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.userimage{
+	display: block;
+	overflow: hidden;
+	float: left;
+	border-radius: 100%;
+	margin: 0 10px 0 0;
+	height: 40px;
+	width: 40px;
+}
+
+.userimage img{
+	width: 100%;
+}
+
+.acountBTNS {
+	position: relative;
+	float: right;
+	margin: 15px 0px 0 0;
+}
+
+.acountBTNS a{
+	color: white;
+	text-decoration: none;
+	margin: 0 10px 0 0;
+}
